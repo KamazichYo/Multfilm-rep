@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мультфильмы</title>
+<style>
+  :root { --bg: #f4f1ea; --fg: #1d1b22; --muted: #6b6672; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15141a; --fg: #f1eee8; --muted: #a39fab; --card: #22202a; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 520px; margin: 0 auto; padding: 20px 16px 48px; }
+  h1 { font-size: 24px; margin: 8px 0 4px; }
+  p { color: var(--muted); margin: 0 0 16px; }
+  .ep { background: var(--card); border-radius: 16px; padding: 12px; margin-bottom: 20px; }
+  video { width: 100%; aspect-ratio: 9 / 16; border-radius: 10px; background: #000; display: block; }
+  h2 { font-size: 18px; margin: 12px 4px 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Мультфильмы</h1>
+  <p>Плоские человечки в 3D-мире. Всё нарисовано кодом.</p>
+  <div class="ep">
+    <video src="kopenick_v1.mp4" controls playsinline preload="metadata"></video>
+    <h2>Капитан из Кёпеника — v1</h2>
+    <p>Берлин, 1906. Сапожник, мундир с барахолки и целый город.</p>
+  </div>
+</main>
+</body>
+</html>
